@@ -37,3 +37,13 @@ G
 modules/shared/index.ts,a/3/a3cd291f434860f668d94ee515503b216d16f12e
 X
 (modules/shared/components/AuthButton.tsx,d/b/dbfeb59ec1c443381ed566927b0b684b5dcb4b58
+M
+modules/shared/fonts/index.ts,8/5/8587fa69c381f67486599da37e18d5aa9a19938b
+S
+#modules/shared/fonts/inconsolata.ts,a/7/a7759608dec67cb6dd8b6f27fb2ad2df589c2cbc
+L
+modules/shared/meta/index.ts,7/c/7c7643b769c798c3b5ef5664bf5d639f7a98fdc8
+O
+modules/shared/meta/metadata.ts,a/1/a142a3238afb0da33c43bdaa2cbeb0c17ecc0a4f
+>
+next.config.js,8/1/811a6d5a2e04fadb44d8eec365f2fa8af5c4facf

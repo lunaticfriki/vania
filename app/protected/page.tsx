@@ -9,14 +9,14 @@ export default async function ProtectedPage() {
     data: { user },
   } = await supabase.auth.getUser()
 
+  if (!user) {
+    return redirect('/login')
+  }
+
   const { data: items } = await supabase
     .from('items')
     .select()
     .eq('owner', user!.id)
-
-  if (!user) {
-    return redirect('/login')
-  }
 
   console.log(items)
 
