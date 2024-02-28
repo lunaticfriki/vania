@@ -19,3 +19,15 @@ H
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+>
+app/layout.tsx,e/e/ee80c90a95b380fdaa8bc6ba2190fbb3fdc30bb0
+B
+app/login/page.tsx,e/f/ef6d8010637089bf88bdd08921e2d29ff2928fa4
+E
+components/Header.tsx,3/6/36aef25bb01676aa8d3d032efb640f83d1b3a3e9
+I
+components/AuthButton.tsx,8/a/8af3636589ed63e5759d97e38ac09452d541244e
+K
+app/login/submit-button.tsx,e/4/e423d61535fef297724309b871056f44c62421f0
+?
+app/globals.css,4/d/4dfa49b1332116153eb16507891285845e9ab86e

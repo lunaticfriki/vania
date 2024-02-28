@@ -24,6 +24,15 @@
   * {
     @apply border-foreground/20;
   }
+
+  h1, h2, h3, span, a {
+    @apply text-pink-700;
+  }
+
+  button {
+    @apply bg-btn-background text-foreground hover:bg-pink-700;
+
+  }
 }
 
 .animate-in {
