@@ -25,6 +25,7 @@ export default async function ProtectedPage() {
         <nav className="w-full flex justify-end items-center border-b border-b-foreground/10 h-16 p-4">
           <AuthButton />
         </nav>
+        <h3 className="text-gray-300 text-center p-4 text-2xl">Last items</h3>
         <div className="flex items-center justify-center flex-wrap">
           {items?.map((item) => (
             <article key={item.id} className="w-[300px] h-[400px] m-4 p-4">
