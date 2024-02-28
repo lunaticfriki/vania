@@ -31,3 +31,9 @@ K
 app/login/submit-button.tsx,e/4/e423d61535fef297724309b871056f44c62421f0
 ?
 app/globals.css,4/d/4dfa49b1332116153eb16507891285845e9ab86e
+@
+modules/index.ts,3/9/390e9532731ed35ca81b977cf3a6ccfbcdae506c
+G
+modules/shared/index.ts,a/3/a3cd291f434860f668d94ee515503b216d16f12e
+X
+(modules/shared/components/AuthButton.tsx,d/b/dbfeb59ec1c443381ed566927b0b684b5dcb4b58

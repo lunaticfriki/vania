@@ -1,4 +1,4 @@
-import AuthButton from '@/components/AuthButton'
+import { AuthButton } from '@/modules'
 import { createClient } from '@/utils/supabase/server'
 import { redirect } from 'next/navigation'
 
