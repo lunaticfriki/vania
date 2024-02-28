@@ -16,9 +16,8 @@ export default async function ProtectedPage() {
   const { data: items } = await supabase
     .from('items')
     .select()
-    .eq('owner', user!.id)
-
-  console.log(items)
+    .eq('owner', user.id)
+    .limit(10)
 
   return (
     <div className="flex-1 w-full flex flex-col gap-20 items-center">
@@ -26,6 +25,18 @@ export default async function ProtectedPage() {
         <nav className="w-full flex justify-end items-center border-b border-b-foreground/10 h-16 p-4">
           <AuthButton />
         </nav>
+        <div className="flex items-center justify-center flex-wrap">
+          {items?.map((item) => (
+            <article key={item.id} className="w-[300px] h-[400px] m-4 p-4">
+              <img
+                src={item.cover}
+                alt={item.title}
+                className="h-full w-full rounded"
+              />
+              <p className="pt-2">{item.title}</p>
+            </article>
+          ))}
+        </div>
       </div>
     </div>
   )
