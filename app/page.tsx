@@ -11,6 +11,6 @@ export default async function Index() {
   if (!user) {
     return redirect('/login')
   } else {
-    return redirect('/protected')
+    return redirect('/dashboard')
   }
 }
