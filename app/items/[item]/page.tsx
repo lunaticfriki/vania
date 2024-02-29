@@ -1,4 +1,4 @@
-import { BackButton, ItemDetail, Navigation } from '@/modules'
+import { BackButton, ItemDetail } from '@/modules'
 import { Item } from '@/modules/items/item.type'
 import { createClient } from '@/utils/supabase/server'
 import { redirect } from 'next/navigation'
