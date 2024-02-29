@@ -1,5 +1,6 @@
-import { AuthButton } from '@/modules'
+import { AuthButton, ItemPreview } from '@/modules'
 import { createClient } from '@/utils/supabase/server'
+import Link from 'next/link'
 import { redirect } from 'next/navigation'
 
 export default async function ProtectedPage() {
@@ -27,16 +28,7 @@ export default async function ProtectedPage() {
         </nav>
         <h3 className="text-gray-300 text-center p-4 text-2xl">Last items</h3>
         <div className="flex items-center justify-center flex-wrap">
-          {items?.map((item) => (
-            <article key={item.id} className="w-[300px] h-[400px] m-4 p-4">
-              <img
-                src={item.cover}
-                alt={item.title}
-                className="h-full w-full rounded"
-              />
-              <p className="pt-2">{item.title}</p>
-            </article>
-          ))}
+          {items?.map((item) => <ItemPreview item={item} key={item.id} />)}
         </div>
       </div>
     </div>

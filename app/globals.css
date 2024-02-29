@@ -31,7 +31,6 @@
 
   button {
     @apply bg-btn-background text-foreground hover:bg-pink-700;
-
   }
 }
 
