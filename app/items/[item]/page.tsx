@@ -28,10 +28,19 @@ export default async function ItemPage({
 
   return (
     <div className="m-auto grid h-full w-[80%] place-content-center place-items-center">
-      {listItems.length ? <ItemDetail item={listItems[0]} /> : 'nothing found'}
-      <div className="flex w-full items-center justify-end p-4">
-        <BackButton>Back</BackButton>
-      </div>
+      {listItems.length ? (
+        <>
+          <ItemDetail item={listItems[0]} />
+          <div className="flex w-full items-center justify-end p-4">
+            <BackButton>Back</BackButton>
+          </div>
+        </>
+      ) : (
+        <div className="grid place-items-center gap-2">
+          <p className="text-2xl">Item not found</p>
+          <BackButton>Back</BackButton>
+        </div>
+      )}
     </div>
   )
 }

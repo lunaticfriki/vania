@@ -30,7 +30,7 @@ export default async function ProtectedPage() {
         </>
       ) : (
         <div className="grid h-full place-content-center place-items-center">
-          <p className="text-center text-xl">Nothing found yet</p>
+          <p className="p-4 text-center text-xl">Nothing found yet</p>
         </div>
       )}
     </div>
