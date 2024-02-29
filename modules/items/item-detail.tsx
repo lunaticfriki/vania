@@ -1,9 +1,8 @@
-import Image from 'next/image'
 import { Item } from './item.type'
 
 export const ItemDetail = ({ item }: { item: Item }) => {
   return (
-    <article className="w-full md:w-[80%] p-4 flex justify-center items-center flex-col gap-2 m-auto">
+    <article className="m-auto flex w-full flex-col items-center justify-center gap-2 p-4 md:w-[80%]">
       <p className="flex items-center justify-end gap-2 text-2xl">
         {item.title}
       </p>
@@ -11,15 +10,13 @@ export const ItemDetail = ({ item }: { item: Item }) => {
       <p className="uppercase">
         {item.publisher} - {item.topic} - {item.category}
       </p>
-      <Image
+      <img
         src={item.cover}
         alt={item.title}
-        className="rounded-md mb-4"
-        height={600}
-        width={500}
+        className="mb-4 w-full rounded-md md:w-[500px]"
       />
       <p className="pt-4">{item.description}</p>
-      <p className="text-end w-full">
+      <p className="w-full text-end">
         <span>{item.completed ? 'Completed' : 'Uncompleted'}</span>
       </p>
     </article>

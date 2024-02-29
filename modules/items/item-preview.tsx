@@ -1,17 +1,14 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { Item } from './item.type'
 
 export const ItemPreview = ({ item }: { item: Item }) => {
   return (
     <Link href={`items/${item.slug}`}>
-      <article className="p-4 w-[300px] h-[500px] m-4 flex flex-col justify-center items-center">
-        <Image
+      <article className="group m-4 flex h-[500px] w-[300px] flex-col items-start justify-start transition-all">
+        <img
           src={item.cover}
           alt={item.title}
-          className="rounded-md mb-4"
-          height={400}
-          width={300}
+          className="mb-4 h-[400px] w-[300px] rounded-md hover:grayscale group-hover:filter"
         />
         <p className="pt-2 text-gray-300">{item.title}</p>
       </article>
