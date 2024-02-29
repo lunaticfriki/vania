@@ -1,4 +1,4 @@
-import { BackButton, ItemDetail } from '@/modules'
+import { BackButton, ItemDetail, Navigation } from '@/modules'
 import { Item } from '@/modules/items/item.type'
 import { createClient } from '@/utils/supabase/server'
 import { redirect } from 'next/navigation'
@@ -27,9 +27,9 @@ export default async function ItemPage({
   const listItems = items as Item[]
 
   return (
-    <div className="w-[80%]">
+    <div className="m-auto grid h-full w-[80%] place-content-center place-items-center">
       {listItems.length ? <ItemDetail item={listItems[0]} /> : 'nothing found'}
-      <div className="w-full flex justify-end items-center p-4">
+      <div className="flex w-full items-center justify-end p-4">
         <BackButton>Back</BackButton>
       </div>
     </div>
